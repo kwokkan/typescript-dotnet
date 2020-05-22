@@ -1,0 +1,13 @@
+{
+  "name": "typescript-dotnet",
+  "version": "1.0.0-alpha.1",
+  "main": "index.ts",
+  "repository": "https://github.com/kwokkan/typescript-dotnet.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "3.9.3"
+  }
+}
