@@ -201,18 +201,18 @@
         "signature": "58548d902fa4c94ff0e78e0fb393afb300cb070128994a1d78529e4a10f858d8",
         "affectsGlobalScope": false
       },
+      "./src/parsers/returnstatement.ts": {
+        "version": "0c9ccc18baf07f4719d0793c0f19ecdd6f3f0d4b3c71f47ef03d199df6da1b57",
+        "signature": "061ce1de20cbcc0f503a27b4d58fca1dfa962feb41b91545e5833a59c8cff48f",
+        "affectsGlobalScope": false
+      },
       "./src/compiler.ts": {
-        "version": "0324a4cd83e466c26f8b70ae6bc72a5eb6a2c3fb9581b583bc67bda36e1f4f2f",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "version": "712f079cb471293b2cd6a2a1c53552417e6cace34ea70d97d3dd7affb09c5853",
+        "signature": "966b9a57417050940900380966242c9b4e3a9605103560f620dd4892afc74617",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "3b966bc630895781b863ad0235c1d5b12ec6d573f8a00ec36c2890aabccd8db8",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
-      },
-      "./src/parsers/returnstatement.ts": {
-        "version": "504fab6ec5819077257434ffb9f7d227110c7b74552524e8050a13b63671c8e1",
+        "version": "4d280b7e331f92e5dd44d06890417724c36ba653ad02e4aeaad3be91cf34d4e4",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
@@ -1141,7 +1141,8 @@
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./node_modules/typescript/lib/typescript.d.ts"
+        "./node_modules/typescript/lib/typescript.d.ts",
+        "./src/parsers/returnstatement.ts"
       ],
       "./src/index.ts": [
         "./node_modules/@types/node/fs.d.ts",
@@ -1802,6 +1803,9 @@
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/parsers/returnstatement.ts": [
+        "./node_modules/typescript/lib/typescript.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1896,36 +1900,44 @@
       "./node_modules/typescript/lib/lib.esnext.promise.d.ts",
       "./node_modules/typescript/lib/lib.esnext.string.d.ts",
       "./node_modules/typescript/lib/typescript.d.ts",
-      "./src/compiler.ts",
       [
-        "./src/index.ts",
+        "./src/compiler.ts",
         [
           {
-            "file": "./src/index.ts",
-            "start": 9,
-            "length": 8,
-            "messageText": "Module '\"./compiler\"' declares 'Compiler' locally, but it is not exported.",
+            "file": "./src/compiler.ts",
+            "start": 808,
+            "length": 16,
+            "code": 2345,
             "category": 1,
-            "code": 2459,
-            "relatedInformation": [
-              {
-                "file": "./src/compiler.ts",
-                "start": 87,
-                "length": 8,
-                "messageText": "'Compiler' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
+            "messageText": {
+              "messageText": "Argument of type 'Statement' is not assignable to parameter of type 'ReturnStatement'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Types of property 'kind' are incompatible.",
+                  "category": 1,
+                  "code": 2326,
+                  "next": [
+                    {
+                      "messageText": "Type 'SyntaxKind' is not assignable to type 'SyntaxKind.ReturnStatement'.",
+                      "category": 1,
+                      "code": 2322
+                    }
+                  ]
+                }
+              ]
+            }
           }
         ]
       ],
+      "./src/index.ts",
       [
         "./src/parsers/returnstatement.ts",
         [
           {
             "file": "./src/parsers/returnstatement.ts",
-            "start": 265,
+            "start": 270,
             "length": 10,
             "messageText": "Object is possibly 'undefined'.",
             "category": 1,
@@ -1933,7 +1945,7 @@
           },
           {
             "file": "./src/parsers/returnstatement.ts",
-            "start": 276,
+            "start": 281,
             "length": 4,
             "code": 2339,
             "category": 1,

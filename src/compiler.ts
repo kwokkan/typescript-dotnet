@@ -1,13 +1,11 @@
-import { SourceFile } from "typescript";
+import * as ts from "typescript";
+import { parseReturnStatement } from "./parsers/returnStatement";
 
-const ts = require("typescript");
-const parseReturnStatement = require("./parsers/returnStatement");
-
-class Compiler {
+export class Compiler {
     createFromText(text: string): void {
         console.log("createFromText", text);
 
-        const sourceFile: SourceFile = ts.createSourceFile("", text, ts.ScriptTarget.Latest);
+        const sourceFile: ts.SourceFile = ts.createSourceFile("", text, ts.ScriptTarget.Latest);
 
         if (!sourceFile) {
             console.error("No text specified");
@@ -21,7 +19,7 @@ class Compiler {
 
             switch (currentStatement.kind) {
                 case ts.SyntaxKind.ReturnStatement:
-                    parseReturnStatement(currentStatement);
+                    parseReturnStatement(currentStatement as ts.ReturnStatement);
                     break;
                 default:
                     throw new Error("createFromText kind not supported: " + currentStatement.kind);
@@ -35,5 +33,3 @@ class Compiler {
         console.log("compile")
     }
 }
-
-module.exports = Compiler;

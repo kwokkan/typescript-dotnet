@@ -1,14 +1,12 @@
 import { Compiler } from "./compiler";
 
-const compiler = require("./compiler");
-
 function main(...args: string[]): number {
     console.log("Running with args", ...args);
 
     for (var i = 0; i < args.length; i++) {
         console.log("Parsing", args[i]);
 
-        const c: Compiler= new compiler();
+        const c = new Compiler();
         c.createFromText(args[i]);
     }
 
