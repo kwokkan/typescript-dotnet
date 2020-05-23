@@ -1,4 +1,5 @@
 const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -37,9 +38,12 @@ module.exports = {
     },
 
     resolve: {
-        // Add ".ts" and ".tsx" as resolvable extensions.
         extensions: [".ts", ".js"],
     },
+
+    plugins: [
+        new CleanWebpackPlugin()
+    ],
 
     module: {
         rules: [
@@ -49,10 +53,10 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     {
+                        loader: "cache-loader",
+                    },
+                    {
                         loader: "ts-loader",
-                        //options: {
-                        //    experimentalWatchApi: true
-                        //}
                     }
                 ]
             }
