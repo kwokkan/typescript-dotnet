@@ -9,12 +9,14 @@ module.exports = {
     // Enable sourcemaps for debugging webpack's output.
     devtool: false,
 
-    entry: "./src/index.ts",
+    entry: {
+        index: "./src/index.ts"
+    },
 
     target: "node",
 
     output: {
-        filename: "index.js",
+        filename: "[name].js",
         path: path.resolve(__dirname, "./dist"),
         devtoolModuleFilenameTemplate: "/src/[resource-path]?[loaders]",
         jsonpFunction: "wj"
@@ -46,6 +48,10 @@ module.exports = {
     ],
 
     module: {
+        noParse: [
+            path.resolve(__dirname, "node_modules", "typescript")
+        ],
+
         rules: [
             {
                 test: /\.ts$/,

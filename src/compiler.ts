@@ -30,6 +30,6 @@ export class Compiler {
     }
 
     compile(): void {
-        console.log("compile")
+        console.log("compile");
     }
 }
