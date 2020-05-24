@@ -1,5 +1,6 @@
 import * as ts from "typescript";
 import { parseReturnStatement } from "./parsers/returnStatement";
+import { FileFormat } from "./types/FileFormat";
 
 export class Compiler {
     createFromText(text: string): void {
@@ -11,6 +12,9 @@ export class Compiler {
             console.error("No text specified");
             return;
         }
+
+        const fileFormat = new FileFormat();
+        const outputArray = fileFormat.getArray();
 
         for (var i = 0; i < sourceFile.statements.length; i++) {
             const currentStatement = sourceFile.statements[i];
@@ -26,7 +30,7 @@ export class Compiler {
             }
         }
 
-        console.log("Compiled");
+        console.log("Compiled", outputArray.buffer);
     }
 
     compile(): void {
