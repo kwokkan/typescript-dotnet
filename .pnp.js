@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "ts-loader",
-        "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.4"
+        "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.5"
       ],
       [
         "typescript",
@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cache-loader", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:4.1.0"],
             ["clean-webpack-plugin", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:3.0.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
-            ["ts-loader", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.4"],
+            ["ts-loader", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.5"],
             ["typescript", "patch:typescript@npm%3A3.9.3#builtin<compat/typescript>::version=3.9.3&hash=8cac75"],
             ["webpack", "npm:4.43.0"],
             ["webpack-cli", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:3.3.11"]
@@ -4686,10 +4686,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-loader", [
-        ["virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.4", {
-          "packageLocation": "./.yarn/$$virtual/ts-loader-virtual-f2c0573986/0/cache/ts-loader-npm-7.0.4-1b599a6c27-3.zip/node_modules/ts-loader/",
+        ["virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.5", {
+          "packageLocation": "./.yarn/$$virtual/ts-loader-virtual-3418c727e0/0/cache/ts-loader-npm-7.0.5-e45679a570-3.zip/node_modules/ts-loader/",
           "packageDependencies": [
-            ["ts-loader", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.4"],
+            ["ts-loader", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.5"],
             ["chalk", "npm:2.4.2"],
             ["enhanced-resolve", "npm:4.1.1"],
             ["loader-utils", "npm:1.4.0"],
@@ -4780,7 +4780,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cache-loader", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:4.1.0"],
             ["clean-webpack-plugin", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:3.0.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
-            ["ts-loader", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.4"],
+            ["ts-loader", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:7.0.5"],
             ["typescript", "patch:typescript@npm%3A3.9.3#builtin<compat/typescript>::version=3.9.3&hash=8cac75"],
             ["webpack", "npm:4.43.0"],
             ["webpack-cli", "virtual:b76e4a494d78de9f28298d8d8591451d86f58a74a2c99ad65dbcfb8033e7c43849111ffbcb67a948314b1ae7eff5b1c425e1d0bf2385dfd852067f32cb08dc89#npm:3.3.11"]
