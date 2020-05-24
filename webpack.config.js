@@ -1,6 +1,5 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const PnpWebpackPlugin = require("pnp-webpack-plugin");
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -40,16 +39,6 @@ module.exports = {
 
     resolve: {
         extensions: [".ts", ".js"],
-
-        plugins: [
-            PnpWebpackPlugin,
-        ],
-    },
-
-    resolveLoader: {
-        plugins: [
-            PnpWebpackPlugin.moduleLoader(module),
-        ],
     },
 
     plugins: [
