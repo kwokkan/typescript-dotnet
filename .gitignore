@@ -338,3 +338,9 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# Custom - Yarn 2
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
